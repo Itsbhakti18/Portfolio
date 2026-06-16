@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhakti Kajalkar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header">
+  <div class="container">
+    <nav>
+      <div class="logo-text">BK<span>.</span></div>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text">
+      <p>MCA Student &amp; Developer</p>
+      <h1>Hi, I'm <span>Bhakti<br>Kajalkar</span></h1>
+      <h2>Java Developer &amp; Web Developer</h2>
+      <p class="header-desc">I build clean, responsive digital experiences and robust Java applications.</p>
+      <a href="#portfolio" class="btn btn2">View My Work &nbsp;<i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="profile-info">
+            <h3>Bhakti Kajalkar</h3>
+            <p>MCA Student</p>
+            <div class="profile-badges">
+              <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+              <span><i class="fas fa-circle available"></i> Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>I'm an MCA student at Mumbai University with a BCA background, passionate about Java development and building clean, responsive websites. I enjoy solving real-world problems through well-structured code and am actively looking for internship opportunities.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>HTML5 &amp; CSS3</span><br>Semantic markup, responsive design, CSS animations</li>
+            <li><span>Java</span><br>OOP, collections, JDBC, exception handling</li>
+            <li><span>MySQL</span><br>Queries, joins, normalization, stored procedures</li>
+            <li><span>GitHub</span><br>Version control, branching, pull requests</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2024 – Present</span><br>Academic projects — Student &amp; Library Management Systems</li>
+            <li><span>2023 – 2024</span><br>Freelance web pages for local businesses</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2024 – Present</span><br>MCA — Mumbai University</li>
+            <li><span>2021 – 2024</span><br>BCA — Mumbai University</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+
+      <div>
+        <i class="fas fa-pen-nib"></i>
+        <h2>UI/UX Design</h2>
+        <p>Designing intuitive, user-centred interfaces with a focus on clean layouts, visual hierarchy and seamless user experience across all devices.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div>
+        <i class="fas fa-code"></i>
+        <h2>Web Development</h2>
+        <p>Building responsive, accessible websites using HTML5 and CSS3. Clean code, mobile-first approach and smooth CSS interactions.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div>
+        <i class="fas fa-laptop-code"></i>
+        <h2>Java Applications</h2>
+        <p>Building desktop applications using Java Swing with clean OOP design patterns, MySQL backends and JDBC connectivity.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+
+      <div class="work">
+        <div class="work-img work-img-1">
+          <div class="work-img-inner">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>E-Commerce Website</h3>
+            <div class="work-tech">
+              <span>HTML5</span><span>CSS3</span><span>JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="layer">
+          <h3>E-Commerce Website</h3>
+          <p>A fully responsive online store with product listings, cart functionality and a clean modern UI built with HTML5, CSS3 and JavaScript.</p>
+          <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="work-img work-img-2">
+          <div class="work-img-inner">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Smart Study Planner</h3>
+            <div class="work-tech">
+              <span>HTML5</span><span>CSS3</span><span>JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="layer">
+          <h3>Smart Study Planner</h3>
+          <p>Helps students manage tasks and deadlines with a simple, distraction-free UI. Includes task prioritization and progress tracking.</p>
+          <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="work-img work-img-3">
+          <div class="work-img-inner">
+            <i class="fas fa-globe"></i>
+            <h3>Portfolio Site</h3>
+            <div class="work-tech">
+              <span>HTML5</span><span>CSS3</span><span>JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="layer">
+          <h3>Portfolio Website</h3>
+          <p>This portfolio — pure HTML5, CSS3 &amp; JavaScript. Fully responsive with smooth navigation and hover interactions.</p>
+          <a href="#" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> kajalkarbhakti@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> +91 00000 00000</p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/Itsbhakti18" target="_blank" rel="noopener noreferrer" style="color:#ababab;">github.com/Itsbhakti18</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/bhakti-kajalkar" target="_blank" rel="noopener noreferrer" style="color:#ababab;">linkedin.com/in/bhakti-kajalkar</a></p>
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/bhakti-kajalkar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Itsbhakti18" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <a href="assets/resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>&#169; 2025 Bhakti Kajalkar &nbsp;|&nbsp; Made with <i class="fas fa-heart"></i> using HTML, CSS &amp; JS</p>
+  </div>
+</div>
+
+<script>
+  var tablinks    = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (var i = 0; i < tablinks.length; i++)    tablinks[i].classList.remove("active-link");
+    for (var i = 0; i < tabcontents.length; i++) tabcontents[i].classList.remove("active-tab");
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu()  { sidemenu.style.right = "0"; }
+  function closemenu() { sidemenu.style.right = "-200px"; }
+
+  const scriptURL = "YOUR_GOOGLE_SCRIPT_URL_HERE";
+  const form = document.forms["submit-to-google-sheet"];
+  const msg  = document.getElementById("msg");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then(function() {
+        msg.innerHTML = "&#10003; Message sent successfully!";
+        setTimeout(function() { msg.innerHTML = ""; }, 5000);
+        form.reset();
+      })
+      .catch(function() { msg.innerHTML = "Something went wrong. Please try again."; });
+  });
+</script>
+
+</body>
+</html>
